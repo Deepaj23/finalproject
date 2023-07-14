@@ -17,27 +17,33 @@ const FormSubmit = () => {
       });
   };
   return (
+  
+   
+
+
+    <center>
+    <h1 style={{color:"red"}}>SLACK NOTIFICATION</h1>
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Name &nbsp;</label>
         <input
           type="text"
           id="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-      </div>
+      </div><br></br><br></br>
       <div>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Email &nbsp;</label>
         <input
           type="email"
           id="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-      </div>
+      </div><br></br><br></br>
       <div>
-        <label htmlFor='message'>Message</label>&ensp;
+        <label htmlFor='message'>Message</label>
         <textarea
           id="message"
           type="message"
@@ -50,6 +56,7 @@ const FormSubmit = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
+    </center>
   );
 };
 
