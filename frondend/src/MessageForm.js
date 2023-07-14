@@ -9,8 +9,8 @@ function MessageForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/send-message', { name,email,message });
-      await axios.post('/store-message', { name,email,message });
+      axios.post("http://localhost:5000/form-submit", { name,email,message });
+      // await axios.post('/store-message', { name,email,message });
       setName('');
       setEmail('');
       setMessage('');
@@ -24,7 +24,7 @@ function MessageForm() {
   return (
     <form action="/form-submit" method="POST" onSubmit={handleSubmit}>
     <center>
-        <h1>CHAT TEXT</h1>
+        <h1>SLACK NOTIFICATION</h1>
         <label >Name</label>&ensp;
           <input
             id="name"

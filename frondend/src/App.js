@@ -1,8 +1,8 @@
-import MessageForm from './MessageForm';
+import FormSubmit from './FormSubmit';
 
 function App() {
   return (
-   <MessageForm />
+   <FormSubmit />
   );
 }
 
